@@ -1,0 +1,18 @@
+SELECT ?v0 WHERE {
+	<http://db.uwaterloo.ca/~galuc/wsdbm/User0> <http://schema.org/birthDate> ?v0 .
+	<http://db.uwaterloo.ca/~galuc/wsdbm/User1> <http://schema.org/birthDateBis> ?v0 .
+	<http://db.uwaterloo.ca/~galuc/wsdbm/User0> <http://schema.org/birthDate> ?v0 . } 
+	
+SELECT ?v0 WHERE {	
+	?v0	<http://schema.org/birthDate>	"xxxxxx" .
+    ?v0	<http://db.uwaterloo.ca/~galuc/wsdbm/userId>	"9764726" .}
+
+SELECT ?v0 WHERE {
+    <http://db.uwaterloo.ca/~galuc/wsdbm/User0> <http://schema.org/birthDate> ?v0 .
+	<http://schema.org/birthDate> <http://purl.org/dc/terms/Location> ?v0 . } 
+	
+SELECT ?v0 WHERE {
+	?v0 <http://purl.org/dc/terms/Location> <http://db.uwaterloo.ca/~galuc/wsdbm/City2> .
+	?v0 <http://schema.org/nationality> <http://db.uwaterloo.ca/~galuc/wsdbm/Country169> .
+	?v0 <http://db.uwaterloo.ca/~galuc/wsdbm/gender> <http://db.uwaterloo.ca/~galuc/wsdbm/Gender1> . }	
+	

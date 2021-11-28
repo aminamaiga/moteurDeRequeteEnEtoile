@@ -1,0 +1,6300 @@
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
+Static Call Graph
+Methods: 73.
+Invocations: 77.
+qengine.program.Main::main:
+	---> index::toString (1 time(s))
+
+	---> Dictionnary::printCurrentDictonnary (1 time(s))
+
+	---> qengine.program.Main::parseData (1 time(s))
+
+	---> System.out::println (1 time(s))
+
+	---> qengine.program.Main::parseQueries (1 time(s))
+
+	---> Dictionnary.triplets.stream()::forEach (1 time(s))
+
+	---> Dictionnary.triplets::stream (1 time(s))
+
+qengine.program.Index::add:
+	---> osp::get (1 time(s))
+
+	---> ops::get (1 time(s))
+
+	---> spo.get(1)::add (1 time(s))
+
+	---> pos::get (1 time(s))
+
+	---> sop::get (1 time(s))
+
+	---> ops.get(4)::add (1 time(s))
+
+	---> sop.get(2)::add (1 time(s))
+
+	---> pso.get(3)::add (1 time(s))
+
+	---> spo::get (1 time(s))
+
+	---> pos.get(5)::add (1 time(s))
+
+	---> osp.get(6)::add (1 time(s))
+
+	---> pso::get (1 time(s))
+
+qengine.program.Dictionnary::getKeyIfExist:
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getKey (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::entrySet (1 time(s))
+
+	---> java.util.Map.Entry<java.lang.Integer,java.lang.String>::getValue (1 time(s))
+
+	---> java.lang.String::equals (1 time(s))
+
+qengine.program.Index::Index:
+	---> pso::put (1 time(s))
+
+	---> spo::put (1 time(s))
+
+	---> osp::put (1 time(s))
+
+	---> pos::put (1 time(s))
+
+	---> ops::put (1 time(s))
+
+	---> sop::put (1 time(s))
+
+qengine.program.Main::parseData:
+	---> rdfParser::parse (1 time(s))
+
+	---> rdfParser::setRDFHandler (1 time(s))
+
+	---> Rio::createParser (1 time(s))
+
+qengine.program.MainRDFHandler::handleStatement:
+	---> st.getObject()::stringValue (1 time(s))
+
+	---> st::getObject (1 time(s))
+
+	---> st::getPredicate (1 time(s))
+
+	---> RDFFormatter::getIdFromUri (3 time(s))
+
+	---> st.getSubject()::toString (1 time(s))
+
+	---> st.getPredicate()::stringValue (1 time(s))
+
+	---> Dictionnary::add (1 time(s))
+
+	---> st::getSubject (1 time(s))
+
+qengine.program.RDFFormatter::getIdFromUri:
+	---> uri::split (1 time(s))
+
+qengine.program.Dictionnary::add:
+	---> qengine.program.Dictionnary::putObject (3 time(s))
+
+	---> java.util.List<qengine.program.RDFTriplet>::add (1 time(s))
+
+qengine.program.Dictionnary::printCurrentDictonnary:
+	---> java.util.Map<java.lang.Integer,java.lang.String>::forEach (1 time(s))
+
+qengine.program.Main::parseQueries:
+	---> Files::lines (1 time(s))
+
+	---> lineIterator::hasNext (1 time(s))
+
+	---> line::trim (1 time(s))
+
+	---> Paths::get (1 time(s))
+
+	---> line.trim()::endsWith (1 time(s))
+
+	---> queryString::toString (1 time(s))
+
+	---> queryString::setLength (1 time(s))
+
+	---> sparqlParser::parseQuery (1 time(s))
+
+	---> lineIterator::next (1 time(s))
+
+	---> queryString::append (1 time(s))
+
+	---> lineStream::iterator (1 time(s))
+
+	---> qengine.program.Main::processAQuery (1 time(s))
+
+qengine.program.Dictionnary::putObject:
+	---> qengine.program.Dictionnary::getKeyIfExist (1 time(s))
+
+	---> java.util.Map<java.lang.Integer,java.lang.String>::put (2 time(s))
+
+qengine.program.Main::processAQuery:
+	---> query.getTupleExpr()::visit (1 time(s))
+
+	---> query::getTupleExpr (2 time(s))
+
+	---> patterns.get(0).getObjectVar()::getValue (1 time(s))
+
+	---> projection::getProjectionElemList (1 time(s))
+
+	---> projection.getProjectionElemList()::getElements (1 time(s))
+
+	---> System.out::println (4 time(s))
+
+	---> StatementPatternCollector::process (1 time(s))
+
+	---> patterns::get (2 time(s))
+
+	---> patterns.get(0)::getObjectVar (1 time(s))
+
+
