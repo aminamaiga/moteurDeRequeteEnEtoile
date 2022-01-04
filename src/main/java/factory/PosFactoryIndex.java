@@ -17,7 +17,7 @@ public class PosFactoryIndex extends IndexFactory {
 		super.INDEX_NUMBER++;
 		Stream mStream = new Stream();
 		mStream.start();
-		
+
 		for (RDFTriplet triplet : dico.getTriplets()) {
 			HashMap<Integer, ArrayList<Integer>> hashObject = new HashMap<>();
 			ArrayList<Integer> listSubject = new ArrayList<>();
@@ -58,6 +58,7 @@ public class PosFactoryIndex extends IndexFactory {
 			});
 		});
 		System.out.println();
+		Dictionnary.test();
 	}
 
 	@Override

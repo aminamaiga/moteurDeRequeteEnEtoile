@@ -1,17 +1,21 @@
 package qengine.program;
 
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
-
 import factory.IndexClient;
 import factory.IndexFactory;
 import model.Dictionnary;
 import model.QueryTriplet;
 
-public class Processing {
+public class Processing  {
+	private static Integer numbrerOfQueries = 0;
+	private static Integer numbrerOfEmptyResults = 0;
+	static final String workingDir = "data/";
 
 	public static void process(Dictionnary dictionnary, List<QueryTriplet> queries) {
+		numbrerOfQueries++;
 		StringBuilder result = new StringBuilder();
 		StringBuilder EmptyResult = new StringBuilder("vide");
 		List<List<Integer>> resultList = new ArrayList<>();
@@ -38,6 +42,7 @@ public class Processing {
 					commons.retainAll(iter.next());
 				} catch (Exception e) {
 					commons.clear();
+					break;
 				}
 			}
 
@@ -47,7 +52,27 @@ public class Processing {
 			});
 		}
 
+		if (result.isEmpty()) {
+			numbrerOfEmptyResults++;
+		} else {
+			//b.writeInfile(query+"\n");
+		}
+
 		String val = ((!result.isEmpty()) ? result.toString() : EmptyResult.toString());
 		System.out.println(">>>>>>> Result: Le resultat de la requete est : " + val);
+	}
+
+	/**
+	 * @return the numbrerOfQueries
+	 */
+	public Integer getNumbrerOfQueries() {
+		return numbrerOfQueries;
+	}
+
+	/**
+	 * @return the numbrerOfEmptyResults
+	 */
+	public Integer getNumbrerOfEmptyResults() {
+		return numbrerOfEmptyResults;
 	}
 }

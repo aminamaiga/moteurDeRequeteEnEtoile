@@ -25,6 +25,7 @@ import factory.SopFactoryIndex;
 import factory.SpoFactoryIndex;
 import model.Dictionnary;
 import model.QueryTriplet;
+import utils.CSVWriter;
 import utils.Constants;
 import utils.RDFFormatter;
 
@@ -48,15 +49,8 @@ final class Main {
 	 * Votre répertoire de travail où vont se trouver les fichiers à lire
 	 */
 	static final String workingDir = "data/";
-
-	/**
-	 * Fichier contenant les requêtes sparql
-	 */
+	public static final String ouputDir = "outputs/";
 	static final String queryFile = workingDir + "STAR_ALL_workload.queryset";
-
-	/**
-	 * Fichier contenant des données rdf
-	 */
 	static final String dataFile = workingDir + "100K.nt";
 
 	// ========================================================================
@@ -65,7 +59,7 @@ final class Main {
 	 * Méthode utilisée ici lors du parsing de requête sparql pour agir sur
 	 * l'objet obtenu.
 	 */
-	public static void processAQuery(ParsedQuery query) {
+	public static void processAQuery(ParsedQuery query, String q) {
 		List<StatementPattern> patterns = StatementPatternCollector.process(query.getTupleExpr());
 		int queryId = 1;
 		List<QueryTriplet> queries = new ArrayList<>();
@@ -95,11 +89,12 @@ final class Main {
 
 		createAndPrintDictionnary();
 
-		parseQueries();
+		parseQueries(queryFile);
 
 		printStatics();
 		startedProgramStream.stop();
 		System.out.println(Constants.ELAPSED_TIME_PROGRAM + startedProgramStream.getDuration());
+
 	}
 
 	public static void createAndPrintDictionnary() {
@@ -114,9 +109,14 @@ final class Main {
 		indexSOP.printIndex();
 
 		indexPOS.printIndex();
+
 	}
 
 	public static void printStatics() {
+		Processing processing = new Processing();
+		CSVWriter csvWriter;
+
+		System.out.println("\nStatistiques: ");
 		programStatistics.add(Constants.FILE_NAME + dataFile);
 		programStatistics.add(Constants.FOLDER_NAME + workingDir);
 		programStatistics.add(Constants.TRIPLET_NUMBER + MainRDFHandler.RDF_TRIPLETS_NUMBER);
@@ -126,7 +126,12 @@ final class Main {
 		programStatistics.add(Constants.ELAPSED_TIME_CREATED_DICO + ELAPSED_TIME_CREATED_DICO);
 		programStatistics.add(Constants.INDEX_NUMBER + IndexFactory.INDEX_NUMBER);
 		programStatistics.add(Constants.ELPASED_TIME_CREATED_INDEX + IndexFactory.getELPASED_TIME_CREATED_INDEX());
+		programStatistics.add(Constants.QUERIES_NUMBER + processing.getNumbrerOfQueries());
+		programStatistics.add(Constants.NUMBER_OF_QUERY_WITH_EMPTY_RESULT + processing.getNumbrerOfEmptyResults());
+		System.out.println(Paths.get(ouputDir));
 
+		// csvWriter = new CSVWriter(Paths.get(queryFile).toString()+, baseURI,
+		// dataFile);
 		programStatistics.stream().forEach((s) -> {
 			System.out.println(s.toString());
 		});
@@ -138,7 +143,8 @@ final class Main {
 	 * Traite chaque requête lue dans {@link #queryFile} avec
 	 * {@link #processAQuery(ParsedQuery)}.
 	 */
-	private static void parseQueries() throws FileNotFoundException, IOException {
+	private static void parseQueries(String queryFile) throws FileNotFoundException, IOException {
+
 		/**
 		 * Try-with-resources
 		 * 
@@ -168,7 +174,8 @@ final class Main {
 				if (line.trim().endsWith("}")) {
 					ParsedQuery query = sparqlParser.parseQuery(queryString.toString(), baseURI);
 
-					processAQuery(query); // Traitement de la requête, à adapter/réécrire pour votre programme
+					processAQuery(query, queryString.toString()); // Traitement de la requête, à adapter/réécrire
+																	// pour votre programme
 
 					queryString.setLength(0); // Reset le buffer de la requête en chaine vide
 				}

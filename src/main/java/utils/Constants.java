@@ -12,5 +12,8 @@ public final class Constants {
 	public static String ELPASED_TIME_CREATED_INDEX = "temps de création des index (ms): ";
 	public static String ELAPSED_TIME_EVALUE_WORKLOAD = "temps total d’évaluation du workload (ms): ";
 	public static String ELAPSED_TIME_PROGRAM = "temps total (du début à la fin du programme) (ms): ";
+	public static String NUMBER_OF_QUERY = "nombre total de requetes: ";
+	public static String NUMBER_OF_QUERY_WITH_EMPTY_RESULT = "nombre total de requetes sans reponses: ";
+	public static String NUMBER_OF_QUERY_WITH_FALSE_RESULT = "nombre total de requetes avec reponses fausses: ";
 
 }

@@ -1,0 +1,57 @@
+*****************Statistiques avec 251144 requetes*********************************
+
+*****outputs avec Mon moteur:
+nom du fichier de données: data/100K.nt
+nom du dossier des requêtes: data/
+nombre de triplets RDF: 107338
+nombre de requêtes: 251144
+temps de lecture des données (ms): 1479
+temp de lecture des requêtes (ms): 25919
+temps création dico (ms ): 1479
+nombre d’index: 3
+temps de création des index (ms): 270
+nombre de requêtes: 251144
+nombre total de requetes sans reponses: 44894
+
+****outputs avec Jena
+nom du fichier de données: data/100K.nt
+nom du dossier des requêtes: data/
+temp de lecture des requêtes (ms): 74083
+nombre total de requetes sans reponses: 44894
+nombre de requêtes: 251144
+
+*****************Statistiques avec 522000 requetes*********************************
+
+*****outputs avec Mon moteur:
+nom du fichier de données: data/100K.nt
+nom du dossier des requêtes: data/
+nombre de triplets RDF: 107338
+nombre de requêtes: 502289
+temps de lecture des données (ms): 1154
+temp de lecture des requêtes (ms): 60405
+temps création dico (ms ): 1154
+nombre d’index: 3
+temps de création des index (ms): 222
+nombre de requêtes: 502288
+
+****outputs avec Jena:
+nom du fichier de données: data/100K.nt
+nom du dossier des requêtes: data/
+temp de lecture des requêtes (ms): 194052
+nombre de requêtes: 502289
+
+*****************Statistiques avec 753432 requetes*********************************
+
+*****outputs avec Mon moteur:
+nom du fichier de données: data/100K.nt
+nom du dossier des requêtes: data/
+temp de lecture des requêtes (ms): 350076
+nombre de requêtes: 1004576
+
+****outputs avec Jena:
+
+nom du fichier de données: data/100K.nt
+nom du dossier des requêtes: data/
+temp de lecture des requêtes (ms): 267931
+nombre de requêtes: 753432
+

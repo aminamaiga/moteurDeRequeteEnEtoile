@@ -12,6 +12,10 @@ public class CSVWriter {
 	String header;
 	String data;
 
+	public CSVWriter() {
+
+	}
+
 	public CSVWriter(String FileName, String header, String data) {
 		this.FileName = FileName;
 		this.header = header;

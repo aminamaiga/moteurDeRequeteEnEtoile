@@ -76,4 +76,7 @@ public class Dictionnary {
 		Dictionnary.triplets = triplets;
 	}
 
+	public static void test() {
+		
+	}
 }
